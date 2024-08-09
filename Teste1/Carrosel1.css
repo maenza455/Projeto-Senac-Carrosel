@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #00000c;
+}
+
+
+.carrossel {
+    position: relative;
+    max-width: 50%;
+    margin: auto;
+    overflow: hidden;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+}
+
+.carrossel-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carrossel-slide {
+    min-width: 50%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.carrossel-slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.info {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.info h2 {
+    margin: 0;
+}
+
+.info p {
+    margin: 5px 0 0;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 24px;
+    transition: background-color 0.3s ease;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
