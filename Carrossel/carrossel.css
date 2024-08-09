@@ -33,13 +33,15 @@ body {
     border-radius: 50px;
     font-size: 30px;
     box-shadow: 1px 1px 2px #888;
-    z-index: 1000;
-    padding-right: 0;
-
+    margin: 3;
+    padding: 5;
 }
 
-.Whats-Direita{
+.Whats{
     text-align: right;
+    position: relative;
+    width: 900px; 
+    top: -30px;
 }
 
 .info{
